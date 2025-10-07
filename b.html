@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Jyoti Electronics — TV Repair & Services</title>
+  <meta name="description" content="Jyoti Electronics — TV fitting, repair, second-hand TVs, home service. Pawar Complex, Vegetable Market, Shop No.2" />
+  <!-- PWA meta -->
+  <meta name="theme-color" content="#0b6cff" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230b6cff'/%3E%3Ctext x='50' y='57' font-size='42' text-anchor='middle' fill='white' font-family='Arial' font-weight='700'%3EJ%3C/text%3E%3C/svg%3E">
+  <style>
+    :root{--primary:#0b6cff;--accent:#ffd24d;--muted:#6b7280;font-family:Inter, system-ui, -apple-system, Roboto, 'Poppins', 'Segoe UI', sans-serif}
+    *{box-sizing:border-box}
+    body{margin:0;color:#0f1724;line-height:1.5;background:linear-gradient(180deg,#f8fbff, #ffffff);font-family:var(--font, Poppins, Inter, sans-serif)}
+    header{position:sticky;top:0;background:rgba(255,255,255,0.9);backdrop-filter:blur(6px);z-index:40;border-bottom:1px solid #eef2ff}
+    .container{max-width:1100px;margin:0 auto;padding:18px}
+    .nav{display:flex;align-items:center;justify-content:space-between}
+    .brand{display:flex;gap:12px;align-items:center}
+    .brand h1{margin:0;font-size:20px;color:var(--primary)}
+    nav a{margin-left:14px;text-decoration:none;color:var(--muted);font-weight:600}
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;padding:48px 0}
+    .hero .lead{padding-right:10px}
+    h2{font-size:28px;margin:0 0 12px}
+    p.lead-p{color:var(--muted);margin:0 0 18px}
+    .cta{display:flex;gap:12px}
+    .btn{background:var(--primary);color:white;padding:10px 16px;border-radius:10px;text-decoration:none;font-weight:700;border:0;cursor:pointer}
+    .btn.alt{background:transparent;border:2px solid var(--primary);color:var(--primary)}
+    .card{background:white;padding:18px;border-radius:12px;box-shadow:0 6px 20px rgba(11,108,255,0.06)}
+    .services{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:20px}
+    .service-item{padding:16px;border-radius:10px;border:1px solid #eef2ff}
+    .grid-tvs{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:18px}
+    .tv-card{background:white;border-radius:10px;padding:12px;border:1px solid #eef2ff}
+    img.brand{height:44px}
+    form .row{display:flex;gap:10px}
+    input,textarea,select{width:100%;padding:10px;border-radius:8px;border:1px solid #e6eefc}
+    footer{padding:28px 0;color:var(--muted);margin-top:30px}
+    .small{font-size:13px;color:#94a3b8}
+    @media(max-width:900px){.hero{grid-template-columns:1fr;}.nav a{display:none}.brand h1{font-size:18px}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div style="width:48px;height:48px;border-radius:10px;background:linear-gradient(135deg,var(--primary),#0061ff);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700">J</div>
+        <div>
+          <h1>Jyoti Electronics</h1>
+          <div class="small">TV Repair • Fitting • Home Service</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#tvs">Second-hand TVs</a>
+        <a href="#book">Book Service</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="home" class="hero">
+      <div class="lead">
+        <h2>Your Trusted Partner for TV & Electronic Solutions</h2>
+        <p class="lead-p">Fast TV fitting, trusted repair, and reliable home service in Pawar Complex, Vegetable Market. Experienced technicians — same-day visits available.</p>
+        <div class="cta">
+          <button class="btn" onclick="document.getElementById('book').scrollIntoView({behavior:'smooth'})">Book a Service</button>
+          <a class="btn alt" href="#tvs">View Second-hand TVs</a>
+        </div>
+
+        <div style="margin-top:18px;display:flex;gap:12px;align-items:center">
+          <a class="small" href="tel:9850401436">📞 Santosh: 9850401436</a>
+          <a class="small" href="tel:9881034737">📞 Umakant: 9881034737</a>
+          <a class="small" href="mailto:Jyotilectronics@gmail.com">✉ Jyotilectronics@gmail.com</a>
+        </div>
+      </div>
+
+      <div>
+        <div class="card">
+          <h3 style="margin-top:0">Quick Services</h3>
+          <div class="services">
+            <div class="service-item">
+              <strong>TV Fitting & Mounting</strong>
+              <div class="small">Wall mount, bracket fixing, wiring tidy-up.</div>
+              <div style="margin-top:8px"><button class="btn" onclick="openBookPref('TV Fitting & Mounting')">Book</button></div>
+            </div>
+            <div class="service-item">
+              <strong>TV Repairing</strong>
+              <div class="small">Display, speaker, power board, motherboard repair.</div>
+              <div style="margin-top:8px"><button class="btn" onclick="openBookPref('TV Repairing')">Book</button></div>
+            </div>
+            <div class="service-item">
+              <strong>Home Visit Service</strong>
+              <div class="small">Technician visits your place for diagnosis & repair.</div>
+              <div style="margin-top:8px"><button class="btn" onclick="openBookPref('Home Visit / On-site Service')">Book</button></div>
+            </div>
+            <div class="service-item">
+              <strong>Accessories & Installation</strong>
+              <div class="small">Soundbar installation, TV setup, smart TV configuration.</div>
+              <div style="margin-top:8px"><button class="btn" onclick="openBookPref('Accessories & Installation')">Book</button></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" style="margin-top:26px">
+      <h3>Why choose Jyoti Electronics?</h3>
+      <div style="display:flex;gap:16px;flex-wrap:wrap;margin-top:12px">
+        <div class="card" style="flex:1;min-width:220px">Experienced technicians, original spare parts where possible.</div>
+        <div class="card" style="flex:1;min-width:220px">Transparent pricing & on-site estimate.</div>
+        <div class="card" style="flex:1;min-width:220px">Same-day visits (subject to availability) & warranty on repairs.</div>
+      </div>
+    </section>
+
+    <section id="tvs" style="margin-top:26px">
+      <h3>Second-hand TVs (available in-store)</h3>
+      <p class="small">We maintain a rotating stock of tested second-hand TVs for customers who want budget-friendly options. (Note: we do NOT accept customer trade-ins through this site.)</p>
+      <div class="grid-tvs">
+        <!-- Example TV cards; replace images/values as needed -->
+        <div class="tv-card">
+          <div style="height:140px;background:linear-gradient(180deg,#f1f5ff,#fff);display:flex;align-items:center;justify-content:center;border-radius:8px"> <strong>Samsung 43"</strong></div>
+          <div style="margin-top:10px"><strong>Price: ₹12,500</strong></div>
+          <div class="small">Tested — Display OK, remote included.</div>
+          <div style="margin-top:10px;display:flex;gap:8px">
+            <a class="btn" href="https://wa.me/919850401436?text=Hi%20Jyoti%20Electronics%2C%20I%20am%20interested%20in%20the%20Samsung%2043%22%20second-hand%20TV">Contact</a>
+            <a class="btn alt" href="tel:9850401436">Call</a>
+          </div>
+        </div>
+
+        <div class="tv-card">
+          <div style="height:140px;background:linear-gradient(180deg,#fff7e6,#fff);display:flex;align-items:center;justify-content:center;border-radius:8px"> <strong>LG 32"</strong></div>
+          <div style="margin-top:10px"><strong>Price: ₹7,200</strong></div>
+          <div class="small">Good condition — HDMI ports working.</div>
+          <div style="margin-top:10px;display:flex;gap:8px">
+            <a class="btn" href="https://wa.me/919881034737?text=Hello%20Jyoti%20Electronics%2C%20I%20want%20details%20about%20the%20LG%2032%22%20TV">Contact</a>
+            <a class="btn alt" href="tel:9881034737">Call</a>
+          </div>
+        </div>
+
+        <div class="tv-card">
+          <div style="height:140px;background:linear-gradient(180deg,#f1f5ff,#fff);display:flex;align-items:center;justify-content:center;border-radius:8px"> <strong>Sony 40"</strong></div>
+          <div style="margin-top:10px"><strong>Price: ₹15,000</strong></div>
+          <div class="small">Excellent picture quality — Minor bezel marks.</div>
+          <div style="margin-top:10px;display:flex;gap:8px">
+            <a class="btn" href="https://wa.me/919850401436?text=Hi%20Jyoti%20Electronics%2C%20I%20want%20to%20buy%20the%20Sony%2040%22%20TV">Contact</a>
+            <a class="btn alt" href="tel:9850401436">Call</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="book" style="margin-top:26px">
+      <h3>Book a Service</h3>
+      <div class="card" style="display:flex;gap:16px;flex-wrap:wrap">
+        <div style="flex:1;min-width:280px">
+          <form id="bookingForm" onsubmit="return submitForm(event)">
+            <div style="margin-bottom:8px"><label>Name</label><input id="name" required placeholder="Your name"></div>
+            <div style="margin-bottom:8px"><label>Phone</label><input id="phone" required placeholder="10-digit phone number"></div>
+            <div style="margin-bottom:8px"><label>Service</label>
+              <select id="serviceType">
+                <option>TV Fitting & Mounting</option>
+                <option>TV Repairing</option>
+                <option>Home Visit / On-site Service</option>
+                <option>Accessories & Installation</option>
+              </select>
+            </div>
+            <div style="margin-bottom:8px"><label>Address</label><textarea id="address" rows="2" placeholder="Full address for visit (area, landmark)"></textarea></div>
+            <div style="margin-bottom:8px"><label>Preferred Date & Time</label><input id="ptime" placeholder="e.g., 10 Oct, morning"></div>
+            <div style="display:flex;gap:10px;margin-top:10px">
+              <button class="btn">Send via WhatsApp</button>
+              <button type="button" class="btn alt" onclick="sendMail()">Send Email</button>
+            </div>
+          </form>
+        </div>
+        <div style="flex:0.9;min-width:260px">
+          <h4>How it works</h4>
+          <ol>
+            <li>Fill the form and press <strong>Send via WhatsApp</strong> to message us directly.</li>
+            <li>We will call to confirm the slot and send technician details.</li>
+            <li>On-site diagnosis may have a small convenience charge; final repair quote after inspection.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" style="margin-top:26px">
+      <h3>Contact & Location</h3>
+      <div class="card" style="display:flex;gap:16px;flex-wrap:wrap">
+        <div style="flex:1;min-width:260px">
+          <p><strong>Address:</strong> Pawar Complex, Vegetable Market, Shop No. 2</p>
+          <p><strong>Phone:</strong> Santosh — 9850401436 | Umakant — 9881034737</p>
+          <p><strong>Email:</strong> Jyotilectronics@gmail.com</p>
+          <p><strong>Timings:</strong> 9 AM to 9 PM</p>
+          <p class="small">Note: We do NOT accept customer trade-ins or 'Sell Your TV' requests through this site.</p>
+          <div style="display:flex;gap:10px;margin-top:8px">
+            <a class="btn" href="tel:9850401436">Call Now</a>
+            <a class="btn alt" href="https://wa.me/919850401436">WhatsApp</a>
+          </div>
+        </div>
+        <div style="flex:1;min-width:260px">
+          <!-- Simple embedded map link -->
+          <div style="width:100%;height:200px;border-radius:10px;overflow:hidden;border:1px solid #eef2ff">
+            <iframe width="100%" height="100%" frameborder="0" style="border:0" src="https://www.google.com/maps?q=Pawar%20Complex%20Vegetable%20Market&output=embed" allowfullscreen=""></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap">
+        <div>
+          <strong>Jyoti Electronics</strong><div class="small">Pawar Complex, Vegetable Market, Shop No.2 • 9 AM - 9 PM</div>
+        </div>
+        <div class="small">© <span id="year"></span> Jyoti Electronics. All rights reserved.</div>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    // populate year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Prefill booking form with a chosen service
+    function openBookPref(service){
+      document.getElementById('serviceType').value = service;
+      document.getElementById('book').scrollIntoView({behavior:'smooth'});
+    }
+
+    // Build WhatsApp message and open
+    function submitForm(e){
+      e.preventDefault();
+      const name = encodeURIComponent(document.getElementById('name').value.trim());
+      const phone = encodeURIComponent(document.getElementById('phone').value.trim());
+      const service = encodeURIComponent(document.getElementById('serviceType').value);
+      const address = encodeURIComponent(document.getElementById('address').value.trim());
+      const ptime = encodeURIComponent(document.getElementById('ptime').value.trim());
+      const message = `Hello Jyoti Electronics! I am ${name}. Phone: ${phone}. Service: ${service}. Address: ${address}. Preferred: ${ptime}. Please confirm availability.`;
+      // change number below if you prefer a particular contact
+      const waNumber = '919850401436';
+      const url = `https://wa.me/${waNumber}?text=${encodeURIComponent(message)}`;
+      window.open(url,'_blank');
+      return false;
+    }
+
+    function sendMail(){
+      const name = encodeURIComponent(document.getElementById('name').value.trim());
+      const phone = encodeURIComponent(document.getElementById('phone').value.trim());
+      const service = encodeURIComponent(document.getElementById('serviceType').value);
+      const address = encodeURIComponent(document.getElementById('address').value.trim());
+      const ptime = encodeURIComponent(document.getElementById('ptime').value.trim());
+      const subject = encodeURIComponent('Service Booking Request - ' + service);
+      const body = encodeURIComponent(`Name: ${name}%0APhone: ${phone}%0AService: ${service}%0AAddress: ${address}%0APreferred: ${ptime}`);
+      window.location.href = `mailto:Jyotilectronics@gmail.com?subject=${subject}&body=${body}`;
+    }
+
+    // Simple PWA service worker via Blob so site remains single-file.
+    if('serviceWorker' in navigator){
+      const swCode = `self.addEventListener('install', event => { self.skipWaiting(); });
+      self.addEventListener('activate', event => { event.waitUntil(self.clients.claim()); });
+      self.addEventListener('fetch', event => {
+        // simple network-first strategy
+        event.respondWith(fetch(event.request).catch(() => caches.match(event.request)));
+      });`;
+      const blob = new Blob([swCode], {type: 'application/javascript'});
+      const swUrl = URL.createObjectURL(blob);
+      navigator.serviceWorker.register(swUrl).then(() => {
+        console.log('Service worker registered (in-page blob).');
+      }).catch(err => console.log('SW register failed', err));
+    }
+
+    // Smooth scrolling for nav links
+    document.querySelectorAll('nav a').forEach(a=>a.addEventListener('click', e=>{e.preventDefault();document.querySelector(a.getAttribute('href')).scrollIntoView({behavior:'smooth'})}));
+  </script>
+</body>
+</html>
